@@ -64,3 +64,12 @@ print(moon_landing_datetime)
 import random
 print(dir(random))
 
+https://en.wikipedia.org/wiki/URL?key=value&lif=42#History
+
+protocal: http, https,ftp, 
+host: en.wikipedia.org
+port: http=80, https=443
+path = wiki/URL
+QueryString: key=value&lif=42
+Fragment=#History
+
