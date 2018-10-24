@@ -1,4 +1,4 @@
-phthon 3 examples
+python 3 examples
 
 
 
