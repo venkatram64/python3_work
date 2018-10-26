@@ -35,12 +35,8 @@ def run_with_processes():
 def run_without_processes():
     arr = [2, 3, 8, 9]
     start = time.time()
-
     square_it(arr)
-    cube_it(arr)
-
     end = time.time()
-
     print('take take to complete the task :', str(end - start))
 
 
