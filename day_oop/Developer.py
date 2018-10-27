@@ -1,4 +1,4 @@
-from Employee import Employee
+from day_oop.Employee import Employee
 
 class Developer(Employee):
     raise_amount = 1.10

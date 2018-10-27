@@ -15,9 +15,9 @@ class Employee:
     def fullname(self):
         return '{} {}'.format(self.first_name, self.last_name)
 
-    @fullname.setter
+    """#@fullname.setter
     def fullname(self, name):
-        first, last = name.split(' ')
+        first, last = name.split(' ')"""
 
     def display(self):
         print(self.fullname())

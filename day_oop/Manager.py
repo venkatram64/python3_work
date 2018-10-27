@@ -1,5 +1,5 @@
-from Employee import Employee
-from Developer import Developer
+from day_oop.Employee import Employee
+from day_oop.Developer import Developer
 
 class Manager(Employee):
 

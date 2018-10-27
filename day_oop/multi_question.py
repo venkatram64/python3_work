@@ -1,4 +1,4 @@
-from Question import Question
+from day_oop.Question import Question
 
 question_prompts = [
     "What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",

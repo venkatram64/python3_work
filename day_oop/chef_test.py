@@ -1,5 +1,5 @@
-from Chef import Chef
-from IndianChef import IndianChef
+from day_oop.Chef import Chef
+from day_oop.IndianChef import IndianChef
 
 
 

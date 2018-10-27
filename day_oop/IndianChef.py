@@ -1,4 +1,4 @@
-from Chef import Chef
+from day_oop.Chef import Chef
 
 class IndianChef(Chef):
 
