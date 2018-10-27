@@ -6,10 +6,10 @@ def my_server():
     while True:
 
         client, addr = my_socket.recvfrom(2048)
-        print(client)
+        print(client.decode('ascii'))
         print("address of the client " + str(addr))
         msg = "Knock Knock Knock, I'm server"
-        my_socket.sendto(msg, addr)
+        my_socket.sendto(msg.encode('ascii'), addr)
 
     my_socket.close()
 
