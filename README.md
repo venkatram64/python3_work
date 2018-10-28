@@ -73,3 +73,10 @@ path = wiki/URL
 QueryString: key=value&lif=42
 Fragment=#History
 
+
+***************
+
+step 1: pip install sqlallchemy
+
+step 2: pip install pymysql
+
