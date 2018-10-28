@@ -31,7 +31,7 @@ class MyClient:
                 break
             if not msg:
                 break
-            print(msg)
+            print(msg + "\n")
 
     def send(self, conn):
         while True:
