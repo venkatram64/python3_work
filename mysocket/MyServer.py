@@ -35,20 +35,23 @@ class MyServer:
     def client_thread(self, conn, ip, port, MAX_BUFFER_SIZE=4096):
 
         while True:
-            msg = conn.recv(MAX_BUFFER_SIZE)
-            size = sys.getsizeof(msg)
-            if size >= MAX_BUFFER_SIZE:
-                print("The length of input is long: {}".format(size))
-            msg_decode = msg.decode("utf8").rstrip()
-            print("Message received from client is {}".format(msg_decode))
-            msg_to_send_to_client = self.reverse_msg(msg_decode)
+            try:
+                msg = conn.recv(MAX_BUFFER_SIZE)
+                size = sys.getsizeof(msg)
+                if size >= MAX_BUFFER_SIZE:
+                    print("The length of input is long: {}".format(size))
+                msg_decode = msg.decode("utf8").rstrip()
+                print("Message received from client is {}".format(msg_decode))
+                msg_to_send_to_client = self.reverse_msg(msg_decode)
 
-            if msg_decode != "quit":
-                msg_to_send_to_client_encode = msg_to_send_to_client.encode("utf8")
-                conn.sendall(msg_to_send_to_client_encode)
-            else:
+                if msg_decode != "quit":
+                    msg_to_send_to_client_encode = msg_to_send_to_client.encode("utf8")
+                    conn.sendall(msg_to_send_to_client_encode)
+                else:
+                    conn.close()
+                    print("Connection " + ip + ": " + port + " ended")
+            except OSError:
                 conn.close()
-                print("Connection " + ip + ": " + port + " ended")
 
     def reverse_msg(self, msg):
         return msg[::-1]
