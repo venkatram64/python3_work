@@ -5,6 +5,7 @@ from my_db.model.Movie import Movie
 from datetime import date
 
 def fetch_data():
+
     session = Session()
     movies = session.query(Movie).all()
 
