@@ -4,7 +4,7 @@ output = g(2)
 
 print(output)
 
-full_name = lambda  fn, ln: fn.strip().title() + " " + ln.strip().title()
+full_name = lambda fn, ln: fn.strip().title() + " " + ln.strip().title()
 
 print(full_name("venkatram", "veerareddy"))
 

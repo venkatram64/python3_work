@@ -7,7 +7,7 @@ def square_numbers(nums):
 
 if __name__ == '__main__':
 
-    squares_of_nums = square_numbers([1, 2, 3, 4, 5, 6])
-    for num in squares_of_nums:
+    nums_of_squares = square_numbers([1, 2, 3, 4, 5, 6])
+    for num in nums_of_squares:
         print(num)
 
