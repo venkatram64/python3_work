@@ -12,7 +12,7 @@ print(my_set)
 
 my_list = [2,2,2,5,5,5,7,7,1,2,9]
 
-# set will removes the duplicates
+# set will removes the duplicatesfi
 
 my_set = set(my_list)
 print(my_set)
