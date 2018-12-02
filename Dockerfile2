@@ -1,0 +1,28 @@
+FROM node
+
+WORKDIR /app
+
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD node index.js
+
+*******
+
+below should not be part of the docker file
+
+npm init
+
+npm install -S express mongodb
+
+npm i -D nodemon
+
+(go to package --package.json
+
+"dev": "nodemon --inspect=0.0.0.0:9229")
