@@ -80,3 +80,14 @@ step 1: pip install sqlallchemy
 
 step 2: pip install pymysql
 
+
+***************************************
+
+To create a virtual environment:
+
+step 1: Go to python installation
+step 2: python -m venv C:\work\pwork
+
+step 3: To activate
+c:\work\pwork\Scripts\activate.bat
+
