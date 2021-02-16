@@ -91,3 +91,7 @@ step 2: python -m venv C:\work\pwork
 step 3: To activate
 c:\work\pwork\Scripts\activate.bat
 
+
+about dunders or magic methods
+https://docs.python.org/3/reference/datamodel.html
+

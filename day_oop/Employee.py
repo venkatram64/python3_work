@@ -51,40 +51,41 @@ class Employee:
     def __add__(self, other):
         return self.pay + other.pay
 
-emp1 = Employee("Venkatram", "veerareddy", "venkat.veerareddy@gmail.com",50000)
 
-emp2 = Employee("Srijan", "veerareddy", "srijan.veerareddy@gmail.com",500000)
+if __name__ == '__main__':
+    emp1 = Employee("Venkatram", "veerareddy", "venkat.veerareddy@gmail.com", 50000)
 
-print("Adding two employees:  " + str(emp1 + emp2))
+    emp2 = Employee("Srijan", "veerareddy", "srijan.veerareddy@gmail.com", 500000)
 
+    print("Adding two employees---->:  " + str(emp1 + emp2)) #dunder __add__ will be called
 
-emp1.apply_amount()
+    emp1.apply_amount()
 
-emp1.display()
+    emp1.display()
 
-print(emp1.__dict__)
+    print(emp1.__dict__)
 
-""" dictionary, see there is no raise_amount, so it is a class variable not a 
- instance variable
- {'first_name': 'Venkatram', 'last_name': 'veerareddy', 'email': 'venkat.veerareddy@gmail.com', 'pay': 52000}
-"""
+    """ dictionary, see there is no raise_amount, so it is a class variable not a 
+     instance variable
+     {'first_name': 'Venkatram', 'last_name': 'veerareddy', 'email': 'venkat.veerareddy@gmail.com', 'pay': 52000}
+    """
 
-Employee.set_raise_amount(1.2)
-emp2.apply_amount()
-emp2.display()
+    Employee.set_raise_amount(1.2)
+    emp2.apply_amount()
+    emp2.display()
 
-emp3 = Employee.from_string("Winnie-Veerareddy-Winnie.Veerareddy@gmail.com-60000")
-emp3.display()
+    emp3 = Employee.from_string("Winnie-Veerareddy-Winnie.Veerareddy@gmail.com-60000")
+    emp3.display()
 
-print("***********")
-print(emp3)
+    print("***********")
+    print(emp3)
 
-#print(repr(emp3))
-#print(str(emp3))
+    # print(repr(emp3))
+    # print(str(emp3))
 
-my_date = datetime.date(2018, 10, 24)
+    my_date = datetime.date(2018, 10, 24)
 
-print("Is today working day? " + str(Employee.is_workday(my_date)))
+    print("Is today working day? " + str(Employee.is_workday(my_date)))
 
 
 

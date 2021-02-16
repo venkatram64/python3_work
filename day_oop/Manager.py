@@ -21,20 +21,27 @@ class Manager(Employee):
     def display(self):
         print("Manager:")
         super().display()
+        print("********************")
         print("Employees:")
         for emp in self.employees:
             Employee.display(emp)
+            print("****************")
 
 
+if __name__ == '__main__':
+    dev1 = Developer("Venkatram", "Veerareddy", "venkat.veeraeddy@gmail.com", 40000, "Python")
+    dev2 = Developer("Srijan", "Veerareddy", "srijan.veeraeddy@gmail.com", 400000, "Python")
+
+    #mgr1 = Manager("Shamanthaka", "Veerareddy", "Shamanthaka.veerareddy@gmail.com", 600000, [dev1, dev2])
+    mgr1 = Manager("Shamanthaka", "Veerareddy", "Shamanthaka.veerareddy@gmail.com", 600000)
+    mgr1.add_emp(dev1)
+    mgr1.add_emp(dev2)
+
+    mgr1.display()
+
+    print(isinstance(mgr1, Employee))
+
+    print(issubclass(Developer, Employee))
+    print(issubclass(Developer, Employee))
 
 
-
-dev1 = Developer("Venkatram","Veerareddy","venkat.veeraeddy@gmail.com",40000,"Python")
-
-mgr1 = Manager("Srijan","Veerareddy","srijan.veerareddy@gmail.com",50000,[dev1])
-
-mgr1.display()
-
-print(isinstance(mgr1, Employee))
-
-print(issubclass(dev1, Employee))
