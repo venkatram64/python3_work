@@ -94,4 +94,14 @@ c:\work\pwork\Scripts\activate.bat
 
 about dunders or magic methods
 https://docs.python.org/3/reference/datamodel.html
+good one OOP in python
+#https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc&index=1
+
+first class
+
+https://www.youtube.com/watch?v=kr0mpwqttM0
+
+decorators
+
+https://www.youtube.com/watch?v=FsAPt_9Bf3U
 

@@ -51,6 +51,9 @@ class Employee:
     def __add__(self, other):
         return self.pay + other.pay
 
+    def __len__(self):
+        return len(self.fullname())
+
 
 if __name__ == '__main__':
     emp1 = Employee("Venkatram", "veerareddy", "venkat.veerareddy@gmail.com", 50000)
@@ -86,6 +89,9 @@ if __name__ == '__main__':
     my_date = datetime.date(2018, 10, 24)
 
     print("Is today working day? " + str(Employee.is_workday(my_date)))
+
+    #length of full name
+    print("Length of full name ----> " + str(len(emp1)))
 
 
 
